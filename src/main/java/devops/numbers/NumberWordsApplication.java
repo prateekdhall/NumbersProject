@@ -21,7 +21,10 @@ public final class NumberWordsApplication {
 				int number = Integer.parseInt(value);
 				String wordValue = numberWords.toWords(number);
 				System.out.println("WordValue: " + wordValue);
-			} catch (NumberFormatException | IOException e) {
+			} catch (NumberFormatException e) {
+				System.out.println("Invalid number");
+			}
+			catch (IOException e1) {
 				System.out.println("Invalid number");
 			}
 		}
