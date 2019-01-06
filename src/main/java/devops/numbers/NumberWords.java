@@ -23,7 +23,7 @@ public class NumberWords {
 		return result.trim();
 	}
 
-	public static String convert(final int n) {
+	public static String convert(int n) {
 		if (n < 0) {
 			return "Minus " + convert(-n);
 		}
